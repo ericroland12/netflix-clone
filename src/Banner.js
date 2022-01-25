@@ -21,7 +21,7 @@ function Banner() {
 
   const truncate = (str, n) => {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
-  };
+  }; 
 
   return (
     <header
@@ -36,14 +36,16 @@ function Banner() {
         <h2 className="banner__title">
           {movie?.title || movie?.name || movie?.original_name}{" "}
         </h2>
-        <div className="banner__buttons">
-          <button className="banner__button">play</button>
-          <button className="banner__button">More info</button>
-        </div>
         <h1 className="banner__description">
           {truncate(movie?.overview, 200)}
         </h1>
+        <div className="banner__buttons">
+          <button className="banner__button">Play</button>
+          <button className="banner__button">More info</button>
+        </div>
+        
       </div>
+      <div className="bottom__fade"></div>
     </header>
   );
 }

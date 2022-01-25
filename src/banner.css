@@ -1,7 +1,7 @@
 .banner {
   color: #ffffff;
-  object-fit: cover;
-  height: 650px;
+  object-fit: contain;
+  height: 450px;
 }
 
 .banner__content {
@@ -15,10 +15,39 @@
   font-weight: 800;
 }
 .banner__description {
-  width: 45rem;
   line-height: 1.3;
   padding-top: 1rem;
   font-size: 0.8rem;
   max-width: 360px;
   height: 80px;
+  width: 45rem;
+  /* color: #fff;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 1.4vw;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 45%); */
+}
+.banner__button {
+  cursor: pointer;
+  outline: none;
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding: 0.5rem 2rem;
+  margin-right: 1rem;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.banner__button:hover {
+  transition: all 0.2s;
+}
+.bottom__fade {
+  height: 7.5rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #141414
+  );
 }
