@@ -13,12 +13,9 @@ function Banner() {
           Math.floor(Math.random() * request.data.results.length - 1)
         ]
       );
-      console.log(request.data.results[0]);
     }
     FetchData();
   }, []);
-  console.log(movie);
-
   const truncate = (str, n) => {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   }; 
